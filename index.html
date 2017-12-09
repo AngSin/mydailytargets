@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>My Daily Targets</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+    <link rel="shortcut icon" href="./M.png" type="favicon/ico">
+  </head>
+  <body>
+    <header id="header">
+      <p><span class="logo">My Daily Targets</span><span id="today"></span></p>
+    </header>
+
+    <div class="intro">
+      <h5>Your personal diary</h5>
+      <p><i>My Daily Targets</i> uses local storage on your browser, so your information is completely safe, visible to only you. It is not saved on a cloud, on your Facebook account or anywhere else, </p>
+      <p>Since it is saved on your browser and not through an account, note that if you go on a different device or browser, your daily targets will not be displayed.</p>
+      <p>There will soon be a facility to look through your targets history through a calendar. </p>
+    </div>
+
+    <p class="quote">Benjamin Franklin asked himself two questions everyday: </p>
+
+    <h3 class="list-header">What good shall I do today?</h3>
+    <div class="to-do">
+      <ul id="list-todos"></ul>
+      <form id="add-todo-form">
+        <p><input id="todo-name" type="text" class="input-group form-control" required placeholder="Enter a target for today here..."><!-- <input class="btn btn-success btn-sm" type="submit"> --></p>
+      </form>
+    </div>
+
+    <h3 class="list-header">What good have I done today?</h3>
+    <div class="done">
+      <ul id="list-done"></ul>
+    </div>
+
+    <footer>AngSin &copy; 2017</footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

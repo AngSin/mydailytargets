@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: #3c3c3c;
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 1.5; }
+  body #header {
+    font-family: Noir;
+    color: white;
+    background-color: #ff6464;
+    width: 100%; }
+    body #header .logo {
+      font-size: 32px;
+      font-weight: 900;
+      position: relative;
+      top: 0;
+      left: 10%; }
+    body #header #today {
+      font-size: 16px;
+      float: right;
+      margin-right: 10px;
+      margin-top: 1em; }
+  body #today {
+    float: right; }
+  body .quote {
+    position: relative;
+    left: 30%;
+    color: grey;
+    font-weight: 300; }
+  body .intro {
+    color: #969696;
+    float: left;
+    position: absolute;
+    top: 15%;
+    margin-left: 2%;
+    width: 26%;
+    z-index: -10; }
+    body .intro p {
+      font-size: 14px; }
+  body .list-header {
+    position: relative;
+    left: 30%;
+    padding: 5px;
+    width: 60%;
+    padding-left: 10%;
+    background-color: #00a1e7;
+    color: white; }
+  body .to-do, body .done {
+    margin-top: -8px;
+    border: 1px solid #00a1e7;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+    position: relative;
+    left: 30%;
+    top: 0%;
+    margin-bottom: 3%;
+    padding: 5px;
+    width: 60%;
+    padding-bottom: 4%; }
+    body .to-do form, body .done form {
+      text-align: center; }
+    body .to-do #list-todos li, body .done #list-todos li {
+      padding: 4px; }
+      body .to-do #list-todos li button, body .done #list-todos li button {
+        float: right; }
+  body ul, body li {
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+  body footer {
+    background-color: #ff6464;
+    color: white;
+    height: 60px;
+    /*display: none;*/
+    padding-left: 10%; }
+
+@media screen and (max-width: 1200px) {
+  body .intro {
+    display: none; }
+  body .list-header, body .to-do, body .done {
+    width: 98vw;
+    left: 1vw; }
+  body .to-do, body .done {
+    margin-bottom: 20px; }
+  body .done {
+    padding-bottom: 10%; }
+  body .list-header {
+    margin-top: 20px;
+    font-size: 24px;
+    padding-left: 6px; }
+  body .quote {
+    left: 4%;
+    padding: 20px 0 20px 0; }
+  body footer {
+    display: block; } }
+
+/*# sourceMappingURL=style.css.map */
