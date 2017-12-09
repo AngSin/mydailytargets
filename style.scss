@@ -1,0 +1,138 @@
+$light-blue: rgb(0,161,231);
+$logo-red: rgb(255,100,100);
+$light-green: #00C07B;
+$dark-green: rgb(30,120,60);
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: rgb(60,60,60);
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+
+  #header {
+      font-family: Noir;
+      color: white;
+      background-color: $logo-red;
+      width: 100%;
+      .logo {
+        font-size: 32px;
+        font-weight: 900;
+        position: relative;
+        top: 0;
+        left: 10%;
+      }
+      #today {
+        font-size: 16px;
+        float: right;
+        margin-right: 10px;
+        margin-top: 1em;
+      }
+  }
+  #today {
+    float: right;
+  }
+
+  .quote {
+    position: relative;
+    left: 30%;
+    color: grey;
+    font-weight: 300;
+  }
+
+  .intro {
+    color: rgb(150,150,150);
+    float: left;
+    position: absolute;
+    top: 15%;
+    margin-left: 2%;
+    width: 26%;
+    p {
+      font-size: 14px;
+    }
+    z-index: -10;
+  }
+
+  .list-header {
+    position: relative;
+    left: 30%;
+    padding: 5px;
+    width: 60%;
+    padding-left: 10%;
+    background-color: $light-blue;
+    color: white;
+  }
+  .to-do, .done {
+    margin-top: -8px;
+    border: 1px solid $light-blue;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+    position: relative;
+    left: 30%;
+    top: 0%;
+    margin-bottom: 3%;
+    padding: 5px;
+    width: 60%;
+    padding-bottom: 4%;
+
+    form {
+      text-align: center;
+    }
+
+    #list-todos {
+      li {
+        padding: 4px;
+        button {
+          float: right;
+        }
+      }
+    }
+  }
+
+  ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  footer {
+    background-color: $logo-red;
+    color: white;
+    height: 60px;
+    /*display: none;*/
+    padding-left: 10%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    .intro {
+      display: none;
+    }
+    .list-header, .to-do, .done {
+      width: 98vw;
+      left: 1vw;
+    }
+    .to-do, .done {
+      margin-bottom: 20px;
+    }
+    .done {
+      padding-bottom: 10%;
+    }
+    .list-header {
+      margin-top: 20px;
+      font-size: 24px;
+      padding-left: 6px;
+    }
+    .quote {
+      left: 4%;
+      padding: 20px 0 20px 0;
+    }
+
+    footer {
+      display: block;
+    }
+  }
+}
